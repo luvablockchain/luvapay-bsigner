@@ -18,6 +18,8 @@ bSigner interacts with these informations:
 When a transaction was hosted by using open APIs, bSigner server will queries transaction's source account on Stellar Network to find all required signers and send PUSH notification to all devices have them. 
 Users use bSigner app to approve a transaction, bSigner server will collects signatures and return to the owner.
 
+![Alt text](/images/host_transaction_api.jpg?raw=true "Host Transaction API")
+
 ## Warning
 - **Private Key** is stored locally on user's device, it is used to generates signature by signing transaction's hash when users approve a transaction.
 - bSigner server only collects **Signatures** and return them to transaction owner using webhook, bSigner doesn't spontaneously submit transaction to the Stellar Network.

@@ -26,7 +26,7 @@ Users use bSigner app to approve a transaction, bSigner server will collects sig
 - bSigner Android and bSigner iOS app are also available in public on Github
 
 ## Intergrate
-**Currently, we only support payment operation for transaction**
+**Contact us at luvapay@gmail.com to register your webhook url**
 
 To intergrate Luvapay bSigner with your service, please follow the simple steps below:
 
@@ -39,6 +39,7 @@ To intergrate Luvapay bSigner with your service, please follow the simple steps 
   signature: "source_account_signature" //optional, to verify owner
 }
 ```
+***Currently, we only support payment operation for transaction***
 
 If transaction was hosted with a source account's signature, only owner can interact with it by using APIs with signature. 
 Without signature, bSigner will start to collects signatures nomarlly but anyone can interact with it like modify it's custom name, remove it by using APIs

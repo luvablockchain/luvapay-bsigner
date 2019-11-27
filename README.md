@@ -41,7 +41,20 @@ To intergrate Luvapay bSigner with your service, please follow the simple steps 
 ```
 
 If transaction was hosted with a source account's signature, only owner can interact with it by using APIs with signature. 
-Without signature, bSigner will start to collect signature nomarlly but anyone can interact with it like modify it's custom name, remove it by using APIs
+Without signature, bSigner will start to collects signatures nomarlly but anyone can interact with it like modify it's custom name, remove it by using APIs
+
+**bSigner will send result to your webhook url when collected all required signatures**
+```go
+//json object
+{
+  xdr: "transaction_xdr",
+  signatures: [
+    { public_key: "signer_public_key", signature: "signer_signature" },
+    ...
+  ] 
+}
+```
+
 
 ## App
 - Get bSigner on [Google Play](https://play.google.com/store/apps/details?id=com.luvapay.bsigner) 

@@ -1,4 +1,4 @@
-# bSigner
+# bSigner by LuvaBlockchain
 Multisignature feature on the Stellar Network with ease.
 
 ## Main features:

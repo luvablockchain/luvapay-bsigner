@@ -4,7 +4,7 @@ Multisignature feature on the Stellar Network with ease.
 ## Main features:
 - Host transaction to request for signatures with open APIs
 - Receive sign transaction request and real-time status updates with PUSH notifications
-- Backup and recover accounts with mnemonics
+- Backup and recover accounts with mnemonics code
 - Protect your signers with PIN and biometric authentication
 - Available for Android and iOS devices
 

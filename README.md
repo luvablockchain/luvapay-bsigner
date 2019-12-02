@@ -36,13 +36,13 @@ To intergrate Luvapay bSigner with your service, please follow the simple steps 
 {
   xdr: "transaction_xdr",
   name: "transaction_custom_name",
-  signature: "source_account_signature" //optional, to verify owner
+  api_key: "api_key_to_verify"
 }
 ```
 ***Currently, we only support payment operation for transaction***
 
-If transaction was hosted with a source account's signature, only owner can interact with it by using APIs with signature. 
-Without signature, bSigner will start to collects signatures nomarlly but anyone can interact with it like modify it's custom name, remove it by using APIs
+If transaction was hosted with api key, only your server can interact with it by using APIs. 
+This API still can be used without api key, bSigner will host and start to collects signatures nomarlly but anyone can interact with it like modify it's custom name, remove it by using APIs
 
 **bSigner will send result to your webhook url when collected all required signatures**
 ```go
@@ -55,7 +55,6 @@ Without signature, bSigner will start to collects signatures nomarlly but anyone
   ] 
 }
 ```
-
 
 ## App
 - Get bSigner on [Google Play](https://play.google.com/store/apps/details?id=com.luvapay.bsigner) 
